@@ -1,7 +1,6 @@
-import javax.sound.midi.Soundbank;
 import java.util.Scanner;
 
-public class COndicional_Switch_Case_Mejorada {
+public class COndicional_Switch_Case_Mejorada_video_23 {
     public static void main(String[] args) {
 
         int DiaDeLaSemana;
