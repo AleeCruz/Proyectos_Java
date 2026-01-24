@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Clase_String_Video_video_24 {
+public class Clase_String_Video_video_24_25 {
 
     public static void main(String[] args) {
         System.out.println("---------Metodos Strings --------------");
@@ -70,6 +70,52 @@ public class Clase_String_Video_video_24 {
 
         caracter= palabra_1.charAt(3);
         System.out.println("La cuarta letra de "+palabra_1+" es "+caracter);
+
+
+
+        //Ahora vamos a ver sobre algunos metodos mas de la clase string
+        /*Veremos sobre el metodo lenght() */
+        System.out.println("\n\n");
+        System.out.println("El tamaño de la palabra "+palabra_1+" es "+palabra_1.length());
+        System.out.println("El tamaño de la palabra "+palabra_2+" es "+palabra_2.length());
+
+
+        //Ahora vamos a usar metodos que nos permitan extraer subcadenas de texto de una cadena ya ingresada
+        //El metodo que vamos a usar es substring(inicio,final)
+
+        System.out.println("\n\n--------Metodo: substring()-------");
+        System.out.println(palabra_1.substring(0,5));
+        System.out.println("\n");
+        System.out.println(palabra_2.substring(1,3));
+
+
+
+
+        //Ahora vamos a usar un metodo que me permita encontrar una coincidencia de string
+        //Usaremos el metodo indexOf que devuelve -1 si no hay coincidencias y 1 si las hay
+
+        System.out.println("\n\n");
+        int coincidencia = palabra_1.indexOf(palabra_2);
+
+        if (coincidencia==-1){
+            System.out.println(palabra_1+" No Contiene la palabra "+palabra_2);
+        }else{
+            System.out.println(palabra_1+" tiene coincidencia con la palabra "+palabra_2);
+        }
+
+        //Ahora vamos a usar el metodo de toUpperCase que permite cambiar a mayusculas las palabras
+
+        System.out.println("\n\n-------Metodo toUpperCase------------");
+
+        System.out.println(palabra_1+ " ahora en mayusculas es: "+palabra_1.toUpperCase());
+
+
+        //Ahora vamos a cambiar todo a minusculas con la el metodo toLowerCase
+
+        System.out.println("\n\n-----------Metodo toLowerCase------------");
+
+        System.out.println(palabra_1+ " a minusculas es: "+palabra_1.toLowerCase());
+
 
 
         //Mostrando la cadena de textos
