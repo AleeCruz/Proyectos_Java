@@ -6,4 +6,4 @@
 Los proyectos individuales, como `Projecto_1/`, se encuentran en subdirectorios separados.
 
 ## Descripción
-Se registraran varios proyectos individuales hasta finales de 2025
+Se registraran varios proyectos individuales hasta finales de 2026
