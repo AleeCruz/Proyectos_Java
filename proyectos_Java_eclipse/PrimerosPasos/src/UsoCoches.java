@@ -24,11 +24,18 @@ public class UsoCoches {
 
 		
 		mazda.color = "Azul";
-		
 		mazda.girar();
+		//Se vera un ejemplo de el ingreso de ruedas de un objeto coche
 		
+		mazda.setRuedas(4);
 		
+		//Y oara observar la cantidad de ruedas que tiene dicho objeto lo obtenemos
+		//Con el metodo getRuedas
 		
+		mazda.getRuedas();
+		
+		System.out.println("La cantidad de ruedas que tiene el coche es: "+mazda.getRuedas());
+				
 	}
 
 }
