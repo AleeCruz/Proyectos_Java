@@ -13,6 +13,14 @@
 
 public class Coche {
 	
+	/*Vamos a crear el metodo constructor 
+	 * para inicializar los objetos */
+	public Coche (){
+		ruedas =4;
+		color = "gris";
+		
+	}
+	
 	//Atributos de la clase coche 
 	
 	private double ancho;
@@ -77,16 +85,20 @@ public class Coche {
 		return color;
 	}
 
-	public void setColor(String color) {
-		this.color = color;
+	public void setColor(String c) {
+		color = c;
 	}
 
 	public int getRuedas() {
 		return ruedas;
 	}
 
-	public void setRuedas(int ruedas) {
-		this.ruedas = ruedas;
+	public void setRuedas(int r) {
+		if (r>3 || r>4) {
+			System.out.println("La cantidad de ruedas que ingresaste es incorecta");
+		}else {
+			ruedas = r;
+		}
 	}
 
 	

@@ -14,28 +14,41 @@ public class UsoCoches {
 		Coche renault = new Coche();
 		
 		
-		renault.andho = 1523.3;
 		
 		renault.arrancar();
 		
 		
 		
+		
+		
+		/*Estamos agregando una nueva clase y la estamos instanciando */
 		Coche mazda = new Coche();
 
 		
-		mazda.color = "Azul";
 		mazda.girar();
 		//Se vera un ejemplo de el ingreso de ruedas de un objeto coche
 		
-		mazda.setRuedas(4);
+		mazda.setRuedas(3);
 		
 		//Y oara observar la cantidad de ruedas que tiene dicho objeto lo obtenemos
 		//Con el metodo getRuedas
 		
 		mazda.getRuedas();
-		
+		/*
 		System.out.println("La cantidad de ruedas que tiene el coche es: "+mazda.getRuedas());
-				
+		System.out.println("La cantidad de ruedas que tiene el coche es: "+renault.getRuedas());
+		*/
+		
+		System.out.println("EL mazda tiene el color: "+mazda.getColor());
+		
+		//Vamos a darle un color especifico a los coches puntualmente a la clse renault
+		
+		renault.setColor("Azul");
+		
+		System.out.println("EL renault tiene el color: "+ renault.getColor());
+		
+		
+	
 	}
 
 }
