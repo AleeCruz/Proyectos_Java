@@ -1,3 +1,5 @@
+package Arreglos;
+
 public class Arreglos_Enteros_Video_35 {
     public static void main(String[] args) {
         //declaracion e inicializacion de una variable de enteros

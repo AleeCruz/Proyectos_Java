@@ -1,3 +1,5 @@
+package Arreglos;
+
 public class Arreglos_Operaciones_Video_38 {
     public static void main(String[] args) {
         int ventas_1[] ={500,600,400,100,650};

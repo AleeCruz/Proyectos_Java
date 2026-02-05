@@ -1,3 +1,5 @@
+package Arreglos;
+
 import java.util.Scanner;
 
 public class Arreglos_Mayor_Valor_Video_38 {

@@ -1,3 +1,5 @@
+package Arreglos;
+
 public class Arreglos_Bucles_Video_36 {
     public static void main(String[] args) {
         String[] productos = {"Martillo","Destornillador","Taladro","Lave inglesa","Pinzas"};

@@ -1,3 +1,5 @@
+package Arreglos;
+
 public class Arrays_Combinacionales_Video_37 {
     public static void main(String[] args) {
          String[] productos  = {"Martillo","Destornillador","Taladro","Llave inglesa","Pinzas"};
