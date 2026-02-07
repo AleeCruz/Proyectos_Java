@@ -10,6 +10,7 @@ public class Automovil {
 
 
 
+
     static void main() {
         //Vamos a instaciar un objeto auto a partir de la clase
 
