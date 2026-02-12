@@ -93,11 +93,11 @@ public class Coche {
 		return ruedas;
 	}
 
-	public void setRuedas(int r) {
-		if (r>3 || r>4) {
+	public void setRuedas(int ruedas) {
+		if (ruedas>3 || ruedas>4) {
 			System.out.println("La cantidad de ruedas que ingresaste es incorecta");
 		}else {
-			ruedas = r;
+			this.ruedas =ruedas;
 		}
 	}
 
@@ -118,6 +118,8 @@ public class Coche {
 	}
 	
 	
-	
+	//Resumentendo la palabra reservada this hace r
+	//Referencia al atributo de la clase con la cual 
+	//estamos trabajando 
 
 }

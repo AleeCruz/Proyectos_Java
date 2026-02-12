@@ -30,6 +30,10 @@ public class UsoCoches {
 		
 		mazda.setRuedas(3);
 		
+		renault.setRuedas(3);
+	
+		System.out.println("La cantidad de ruedas del mazda es:  "+mazda.getRuedas());	
+		System.out.println("La cantida de ruedas del renault es: "+renault.getRuedas());
 		//Y oara observar la cantidad de ruedas que tiene dicho objeto lo obtenemos
 		//Con el metodo getRuedas
 		
@@ -52,3 +56,13 @@ public class UsoCoches {
 	}
 
 }
+
+
+
+//Recien se termino el video 20 del curso de java setters and getters y el metodo constructo que 
+//Da un estado inicial a los objetos 
+
+
+
+
+
