@@ -19,6 +19,19 @@ public class Coche {
 		ruedas =4;
 		color = "gris";
 		
+		//Todos los autos deberian de tener su precio base por el simple hecho de tener ruedas y color
+		pesoBase = 1350.25;
+		
+		//Tambien deberia de tener un precio base que nos permita tener como referencia por el simple hecho de 
+		//tener las 4 ruedas y el color
+		
+		precioBase = 15650.25;
+		
+		
+		peso = pesoBase;
+		
+		precio = precioBase;
+		
 	}
 	
 	//Atributos de la clase coche 
@@ -26,8 +39,26 @@ public class Coche {
 	private double ancho;
 	private double alto;
 	private double peso;
+	private double pesoBase;
 	private String color;
 	private int ruedas;
+	
+	private boolean climatizador;
+	private boolean asientosDeCuero;
+	private double precioBase;
+	private double precio;
+	
+	/*Vamos a crear los getter and setter de las nuevasx variable con las herramientas de eclipse*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -57,10 +88,79 @@ public class Coche {
 	
 	//Se crearon los getters and setters de la clase coche pero en esta ocacion 
 	//Se uso la herramienta de desarrollo eclipse 
+
+	public double getPesoBase() {
+		return pesoBase;
+	}
+
+	public void setPesoBase(double pesoBase) {
+		this.pesoBase = pesoBase;
+	}
+
+	public String isClimatizador() {
+		
+		if (this.climatizador == true ) return "EL coche incorpora zlimatizador";
+		
+		else return "EL coche No incorpora climatizador";
+		 
+	}
+
+	public void setClimatizador(String climatizador) {
+		
+		if (climatizador.equalsIgnoreCase("si")) this.climatizador=true;
+		else this.climatizador = false;
+		
+		setPeso();
+		
+		setPrecio();
+	}
+
+	public String  isAsientosDeCuero() {
+		if (this.asientosDeCuero == true ) return "Tiene los asientos de cuero";
+		else return "No tiene los asientos de cuero";
+	}
+
+	public void setAsientosDeCuero(String asientosDeCuero) {
+		if (asientosDeCuero.equalsIgnoreCase("si")) this.asientosDeCuero = true;
+		else this.asientosDeCuero = false;
+		
+		
+		setPrecio();
+		setPeso();
+	}
+
+	public double getPrecioBase() {
+		return precioBase;
+	}
+
+	public void setPrecioBase(double precioBase) {
+		this.precioBase = precioBase;
+	}
+
+	public double getPrecio() {
+		return precio;
+	}
+
+	private void setPrecio() {
+		
+		if (climatizador) precioBase += 3250.25;
+		if (asientosDeCuero) precioBase += 3500;
+		
+		precio = precioBase;
+	}
+
+	
+	
+	
+	
+	
+	
 	public double getAncho() {
 		return ancho;
 	}
-
+	
+	
+	
 	public void setAncho(double ancho) {
 		this.ancho = ancho;
 	}
@@ -74,11 +174,16 @@ public class Coche {
 	}
 
 	public double getPeso() {
-		return peso;
+		return this.peso;
 	}
 
-	public void setPeso(double peso) {
-		this.peso = peso;
+	private void setPeso() {
+		
+		if (this.climatizador) pesoBase += 50;
+		if (this.asientosDeCuero) pesoBase +=70;
+		
+		peso = pesoBase;
+		
 	}
 
 	public String getColor() {
@@ -101,6 +206,12 @@ public class Coche {
 		}
 	}
 
+	
+	
+	
+	
+	
+	
 	
 	
 	//AHora vamos a crear metodos de la clase coche 

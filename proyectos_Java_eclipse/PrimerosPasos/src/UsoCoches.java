@@ -4,63 +4,20 @@ public class UsoCoches {
 	public static void main(String[] args) {
 		
 		
-		/*Acabamos de ejercitar los conceptos del video  27 y 28 
-		 * Se crearon 2 archivos para la ejercitacion del uso de las clases 
-		 * una clase de tipo Coche y otra clase donde se crearan y usaran todos las instancias de la clase 
-		 * cohce*/
-		
-		
-		
-		Coche renault = new Coche();
-		
-		
-		
-		renault.arrancar();
-		
-		
-		
-		
-		
-		/*Estamos agregando una nueva clase y la estamos instanciando */
-		Coche mazda = new Coche();
-
-		
-		mazda.girar();
-		//Se vera un ejemplo de el ingreso de ruedas de un objeto coche
-		
-		mazda.setRuedas(3);
-		
-		renault.setRuedas(3);
+	Coche coche_1 = new Coche();
 	
-		System.out.println("La cantidad de ruedas del mazda es:  "+mazda.getRuedas());	
-		System.out.println("La cantida de ruedas del renault es: "+renault.getRuedas());
-		//Y oara observar la cantidad de ruedas que tiene dicho objeto lo obtenemos
-		//Con el metodo getRuedas
-		
-		mazda.getRuedas();
-		/*
-		System.out.println("La cantidad de ruedas que tiene el coche es: "+mazda.getRuedas());
-		System.out.println("La cantidad de ruedas que tiene el coche es: "+renault.getRuedas());
-		*/
-		
-		System.out.println("EL mazda tiene el color: "+mazda.getColor());
-		
-		//Vamos a darle un color especifico a los coches puntualmente a la clse renault
-		
-		renault.setColor("Azul");
-		
-		System.out.println("EL renault tiene el color: "+ renault.getColor());
-		
-		
+	//Vamos a darle algun extra a nuestro objeto de la siguiente manera
 	
+	coche_1.setAsientosDeCuero("si");
+	
+	
+	
+	System.out.println("Peso: "+coche_1.getPeso());
+	
+	System.out.println("Precio: "+coche_1.getPrecio());
 	}
 
 }
-
-
-
-//Recien se termino el video 20 del curso de java setters and getters y el metodo constructo que 
-//Da un estado inicial a los objetos 
 
 
 
