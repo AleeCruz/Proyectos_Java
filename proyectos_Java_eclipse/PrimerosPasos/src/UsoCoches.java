@@ -20,6 +20,10 @@ public class UsoCoches {
 }
 
 
+/*Ahora mi objetivo es encapsular los metodos de el coche
+ * como? colocando el metodo de acceso a private*/
+
+
 
 
 
